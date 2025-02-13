@@ -8,12 +8,3 @@ let computerNumber = Math.floor(Math.random() * 6);
 console.log(myNumber);
 console.log(computerNumber);
 
-// Creare un condizionale if in cui si decreta chi è il vincitore
-
-if (myNumber > computerNumber) {
-    console.log("Hai vinto!");
-
-} else {
-    console.log("Hai perso");
-
-}
