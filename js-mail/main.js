@@ -20,7 +20,7 @@ for (let i = 0; i < invited.length; i++) {
     }
 
 }
-if (invited == mail) {
+if (check == true) {
     console.log("You can access to the party");
 }
 else {
