@@ -3,27 +3,20 @@ Chiedi all’utente la sua email, controlla che sia nella lista di chi può acce
 stampa un messaggio appropriato sull’esito del controllo.
 Lo svolgimento va fatto usando un ciclo for è non usando metodi degli array (come includes, per esempio) . */
 
+
 // Creare un array con la lista degli invitati
 const invited = ['Paolo@gmail.com', 'Fabio@gmail.com', 'Pietro@gmail.com', 'Gianluca@gmail.com', 'Davide@gmail.com'];
+console.log(invited);
 
-// Chiede all'utente di inserire la propria mail
-const mail = prompt("Put your e-mail");
+// Chiedere all'utente di inserire la propria mail
+const mail = prompt('Inserisci qua la tua email');
 
-// Creare una variabile di controllo
+// Verificare se la mail è presente all'interno della lista
+if (invited.includes(mail)) {
+    alert('La tua mail è presente');
 
-let check = false;
-
-// Creare un for loop per verificare se la mail è presente nella lista
-for (let i = 0; i < invited.length; i++) {
-    if (mail === invited[i]) {
-        check = true;
-    }
-
-}
-if (invited == mail) {
-    console.log("You can access to the party");
-}
-else {
-    console.log("Go back home");
+} else {
+    alert('Ci dispiace la sua mail non è presente')
 }
 
+// Dare un messaggio di output all'utente dicendogli se la sua mail è o non è presente
