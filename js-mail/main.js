@@ -4,18 +4,21 @@ stampa un messaggio appropriato sull’esito del controllo.
 Lo svolgimento va fatto usando un ciclo for è non usando metodi degli array (come includes, per esempio) . */
 
 // Creare un array con la lista degli invitati
-let invited = ['Paolo', 'Fabio', 'Pietro', 'Gianluca', 'Davide'];
+const invited = ['Paolo@gmail.com', 'Fabio@gmail.com', 'Pietro@gmail.com', 'Gianluca@gmail.com', 'Davide@gmail.com'];
 
-// Creare un for loop si chiede all'utente di inserire la propria mail
+// Chiede all'utente di inserire la propria mail
+const mail = prompt("Put your e-mail");
+
+// Creare un for loop per verificare se l'invitato è presente nella lista
 
 for (let i = 0; i < invited.length; i++) {
     const thisInvited = invited[i];
-    const mail = prompt("Put your e-mail");
     if (thisInvited == mail) {
-        alert("You can access to the party");
-    } else {
-        alert("Go back home");
+        console.log("You can access to the party");
     }
+    else {
+        console.log("Go back home");
+    } break
 }
 
 
