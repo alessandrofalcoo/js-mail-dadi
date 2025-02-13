@@ -9,16 +9,21 @@ const invited = ['Paolo@gmail.com', 'Fabio@gmail.com', 'Pietro@gmail.com', 'Gian
 // Chiede all'utente di inserire la propria mail
 const mail = prompt("Put your e-mail");
 
-// Creare un for loop per verificare se l'invitato è presente nella lista
+// Creare una variabile di controllo
 
+let check = false;
+
+// Creare un for loop per verificare se la mail è presente nella lista
 for (let i = 0; i < invited.length; i++) {
-    const thisInvited = invited[i];
-    if (thisInvited == mail) {
-        console.log("You can access to the party");
+    if (mail == invited) {
+        check = true;
     }
-    else {
-        console.log("Go back home");
-    } break
-}
 
+}
+if (thisInvited == mail) {
+    console.log("You can access to the party");
+}
+else {
+    console.log("Go back home");
+}
 
